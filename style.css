@@ -1,0 +1,222 @@
+html{
+        
+    width:100%;
+    overflow-x:hidden;
+    height: 100%;
+}
+
+body{
+    background-color: rgb(233, 233, 233);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    padding: 0px;
+    width: 375px;
+    height: 812px;
+    font-family: Microsoft Yahei;
+}
+
+button, dd, div, dl, dt, form, h1, h2, h3, h4, h5, h6, input, li, ol, p, td, textarea, th, ul {
+	padding: 0;
+	margin: 0;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+footer, li, ol, p, section, ul {
+	box-sizing: border-box;
+}
+
+#head{
+    height: 400px;
+    width: 375px;
+    background-color: rgb(41, 221, 161);
+    background-image: url(house.png);
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+#head select{
+    background:#fafdfe00;  
+    height:28px;  
+    width:80px;  
+    line-height:28px;  
+    border:none;  
+    -moz-border-radius:2px;  
+    -webkit-border-radius:2px;  
+    border-radius:2px;  
+}
+
+.title{
+    padding: 5px;
+    width: auto;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#head img{
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+}
+
+#detial{
+    box-shadow: 0px 0.5px 1px #888888;
+    padding: 4px 0 4px 0;
+    margin-left: 5px;
+    height: 32px;
+    width: 35px;
+    color: white;
+    font-size: 12px;
+    line-height: 16px;
+    background-color: rgb(231, 231, 3);
+    text-align: center;
+    border-radius: 4px;
+}
+
+#temp{
+    text-align: center;
+    color: white;
+    font-size: 64px;
+    height: 75px;
+    width: 100px;
+    margin-left: 40%;
+    margin-right: auto;
+}
+
+#weather{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+#wind{
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    margin-top: 5px;
+
+}
+
+#word{
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    margin-top: 25px;
+
+}
+
+#roughly{
+    background-color:white;
+    width: 100%;
+    height: 90px;
+    display: inline-flex;   
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0.5px 1px #888888;
+}
+
+.roughly_content{
+    padding: 0 15px 0 15px;
+    width: 157px;
+    height: 50px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+#roughly span img{
+    height: 20px;
+    display: inline-block;
+    line-height: 20px;
+}
+
+#time{
+    height: 136px;
+    border-bottom: 1px solid #e4e4e4;
+    background-color: #fff;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 10px;
+    padding-top: 30px;
+}
+
+.container {
+	display: block;
+	max-width: 500px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+
+ .item {
+	float: left;
+	width: 2.083%;
+	text-align: center;
+	position: relative;
+}
+
+.txt-time {
+	font-size: 12px;
+	line-height: 12px;
+	height: 12px;
+	color: #999;
+}
+
+.icon {
+	height: 24px;
+	width: 24px;
+	display: block;
+	margin: 15px auto;
+}
+
+.txt-degree{
+	font-size: 14px;
+	color: #434343;
+	line-height: 14px;
+	height: 14px;
+	position: relative;
+}
+
+#days {
+    background-image: url(canvas.png);
+    background-size: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+	border-top: 1px solid #e4e4e4;
+	border-bottom: 1px solid #e4e4e4;
+	background-color: #fff;
+	height: 391px;
+	padding-top: 25px;
+	margin-bottom: 10px;
+	position: relative;
+	overflow-x: auto;
+	overflow-y: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+
+.weather{
+    text-align: center;
+}
+
+.night{
+    text-align: center;
+    margin-top: 116px;
+    box-sizing: border-box;
+    width: 62.5px;
+    height: auto;
+}
+
+#chart-days {
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 136px;
+	top: 121px;
+}

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>腾讯天气</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div id="head">
+        <div class="title" style="height: 35px;">
+            <img src="arrow_left.png" href="#">
+            <div style="color:white">
+                <img style="position: relative;top: 4px;" src="region.png" >
+                <select id="city" style="line-height: 25px;" onchange="location.reload() ">
+                    <option value="bejing">北京</option>
+                    <option value="shanghai">上海</option>
+                    <option value="chongqing">重庆</option>
+                    <option value="chengdu">成都</option>
+                </select>
+            </div>
+            <img  src="link.png">
+        </div>
+        <div id="detial">90</br>良</div>
+        <div id="temp"></div>
+        <div id="weather"></div>
+        <div id="wind"></div>
+        <div id="word">现在的温度比较凉爽~</div>
+    </div>
+    <div id="roughly">
+        <div class="roughly_content" style="border-right: 0.5px solid #888888;">
+            <span>今天</span><span style="margin-left: 84px;">20/16°</span></br>
+            <span>阴</span><img src="02.png" style="width: 15%;margin-top: 10px;margin-left: 111px;">
+        </div>
+        <div class="roughly_content">
+            <span>明天</span><span style="margin-left: 84px;">20/16°</span></br>
+            <span>阴</span><img src="02.png" style="width: 15%;margin-top: 10px;margin-left: 111px;">
+        </div>
+    </div>
+    <section id="time" class="container" style="margin-top: 10px;">
+        <div style="width: 400%;">
+            <ol id="ls-hours-weather">
+                <li class="item" style="width: 4.16666%;">
+                    <p class="txt-time">11:00</p>
+                    <img class="icon" src="07.png">
+                    <p class="text-degree">29</p>
+                </li>
+                <li class="item" style="width: 4.16666%;">
+                    <p class="txt-time">12:00</p>
+                    <img class="icon" src="07.png">
+                    <p class="text-degree">29</p>
+                </li>
+                <li class="item" style="width: 4.16666%;">
+                    <p class="txt-time">13:00</p>
+                    <img class="icon" src="07.png">
+                    <p class="text-degree">29</p>
+                </li>
+                <li class="item" style="width: 4.16666%;">
+                    <p class="txt-time">14:00</p>
+                    <img class="icon" src="07.png">
+                    <p class="text-degree">29</p>
+                </li>
+                <li class="item" style="width: 4.16666%;">
+                    <p class="txt-time">15:00</p>
+                    <img class="icon" src="07.png">
+                    <p class="text-degree">29</p>
+                </li>
+                <li class="item" style="width: 4.16666%;">
+                    <p class="txt-time">16:00</p>
+                    <img class="icon" src="07.png">
+                    <p class="text-degree">29</p>
+                </li>
+                <li class="item" style="width: 4.16666%;">
+                    <p class="txt-time">17:00</p>
+                    <img class="icon" src="07.png">
+                    <p class="text-degree">29</p>
+                </li>
+                <li class="item" style="width: 4.16666%;">
+                    <p class="txt-time">18:00</p>
+                    <img class="icon" src="07.png">
+                    <p class="text-degree">29</p>
+                </li>
+                <li class="item" style="width: 4.16666%;">
+                    <p class="txt-time">19:00</p>
+                    <img class="icon" src="07.png">
+                    <p class="text-degree">29</p>
+                </li>
+                <li class="item" style="width: 4.16666%;">
+                    <p class="txt-time">20:00</p>
+                    <img class="icon" src="07.png">
+                    <p class="text-degree">29</p>
+                </li>
+                <li class="item" style="width: 4.16666%;">
+                    <p class="txt-time">21:00</p>
+                    <img class="icon" src="07.png">
+                    <p class="text-degree">29</p>
+                </li>
+                <li class="item" style="width: 4.16666%;">
+                    <p class="txt-time">22:00</p>
+                    <img class="icon" src="07.png">
+                    <p class="text-degree">29</p>
+                </li>
+                <li class="item" style="width: 4.16666%;">
+                    <p class="txt-time">23:00</p>
+                    <img class="icon" src="07.png">
+                    <p class="text-degree">29</p>
+                </li>
+                <li class="item" style="width: 4.16666%;">
+                    <p class="txt-time">24:00</p>
+                    <img class="icon" src="07.png">
+                    <p class="text-degree">29</p>
+                </li>
+                <li class="item" style="width: 4.16666%;">
+                    <p class="txt-time">1:00</p>
+                    <img class="icon" src="07.png">
+                    <p class="text-degree">29</p>
+                </li>
+                <li class="item" style="width: 4.16666%;">
+                    <p class="txt-time">2:00</p>
+                    <img class="icon" src="07.png">
+                    <p class="text-degree">29</p>
+                </li>
+                <li class="item" style="width: 4.16666%;">
+                    <p class="txt-time">3:00</p>
+                    <img class="icon" src="07.png">
+                    <p class="text-degree">29</p>
+                </li>
+                <li class="item" style="width: 4.16666%;">
+                    <p class="txt-time">4:00</p>
+                    <img class="icon" src="07.png">
+                    <p class="text-degree">29</p>
+                </li>
+                <li class="item" style="width: 4.16666%;">
+                    <p class="txt-time">5:00</p>
+                    <img class="icon" src="07.png">
+                    <p class="text-degree">29</p>
+                </li>
+                <li class="item" style="width: 4.16666%;">
+                    <p class="txt-time">6:00</p>
+                    <img class="icon" src="07.png">
+                    <p class="text-degree">29</p>
+                </li>
+                <li class="item" style="width: 4.16666%;">
+                    <p class="txt-time">7:00</p>
+                    <img class="icon" src="07.png">
+                    <p class="text-degree">29</p>
+                </li>
+                <li class="item" style="width: 4.16666%;">
+                    <p class="txt-time">8:00</p>
+                    <img class="icon" src="07.png">
+                    <p class="text-degree">29</p>
+                </li>
+                <li class="item" style="width: 4.16666%;">
+                    <p class="txt-time">9:00</p>
+                    <img class="icon" src="07.png">
+                    <p class="text-degree">29</p>
+                </li>
+                <li class="item" style="width: 4.16666%;">
+                    <p class="txt-time">10:00</p>
+                    <img class="icon" src="07.png">
+                    <p class="text-degree">29</p>
+                </li>
+            </ol>
+        
+        </div>
+
+    </section>
+    <section id="days" class="container">
+        <div style="width:500px">
+            <ol>
+                <il class="item" style="width: 62.5px;">
+                    <p class="txt-time">昨天</p>
+                    <p class="txt-time" style="margin-top: 5px;margin-bottom: 15px;">05/23</p>
+                    <div class="daytime" style="width: 62.5px;height: 74px;">
+                        <p class="weather">阴</p>
+                        <img class="icon" src="02.png">
+                    </div>
+                    <div class="night">
+                        <img class="icon" src="01-1.png">
+                        <p class="weather">晴</p>
+                        <p class="txt-time" style="margin-top: 15px;margin-bottom: 5px;">西北风</p>
+                        <p class="txt-time">4级</p>
+                    </div>
+                </il>
+                <il class="item" style="width: 62.5px;">
+                    <p class="txt-time">今天</p>
+                    <p class="txt-time" style="margin-top: 5px;margin-bottom: 15px;">05/23</p>
+                    <div class="daytime" style="width: 62.5px;height: 74px;">
+                        <p class="weather">阴</p>
+                        <img class="icon" src="02.png">
+                    </div>
+                    <div class="night">
+                        <img class="icon" src="01-1.png">
+                        <p class="weather">晴</p>
+                        <p class="txt-time" style="margin-top: 15px;margin-bottom: 5px;">西北风</p>
+                        <p class="txt-time">4级</p>
+                    </div>
+                </il>
+                <il class="item" style="width: 62.5px;">
+                    <p class="txt-time">明天</p>
+                    <p class="txt-time" style="margin-top: 5px;margin-bottom: 15px;">05/23</p>
+                    <div class="daytime" style="width: 62.5px;height: 74px;">
+                        <p class="weather">阴</p>
+                        <img class="icon" src="02.png">
+                    </div>
+                    <div class="night">
+                        <img class="icon" src="01-1.png">
+                        <p class="weather">晴</p>
+                        <p class="txt-time" style="margin-top: 15px;margin-bottom: 5px;">西北风</p>
+                        <p class="txt-time">4级</p>
+                    </div>
+                </il>
+                <il class="item" style="width: 62.5px;">
+                    <p class="txt-time">周二</p>
+                    <p class="txt-time" style="margin-top: 5px;margin-bottom: 15px;">05/23</p>
+                    <div class="daytime" style="width: 62.5px;height: 74px;">
+                        <p class="weather">阴</p>
+                        <img class="icon" src="02.png">
+                    </div>
+                    <div class="night">
+                        <img class="icon" src="01-1.png">
+                        <p class="weather">晴</p>
+                        <p class="txt-time" style="margin-top: 15px;margin-bottom: 5px;">西北风</p>
+                        <p class="txt-time">4级</p>
+                    </div>
+                </il>
+                <il class="item" style="width: 62.5px;">
+                    <p class="txt-time">周三</p>
+                    <p class="txt-time" style="margin-top: 5px;margin-bottom: 15px;">05/23</p>
+                    <div class="daytime" style="width: 62.5px;height: 74px;">
+                        <p class="weather">阴</p>
+                        <img class="icon" src="02.png">
+                    </div>
+                    <div class="night">
+                        <img class="icon" src="01-1.png">
+                        <p class="weather">晴</p>
+                        <p class="txt-time" style="margin-top: 15px;margin-bottom: 5px;">西北风</p>
+                        <p class="txt-time">4级</p>
+                    </div>
+                </il>
+                <il class="item" style="width: 62.5px;">
+                    <p class="txt-time">周四</p>
+                    <p class="txt-time" style="margin-top: 5px;margin-bottom: 15px;">05/23</p>
+                    <div class="daytime" style="width: 62.5px;height: 74px;">
+                        <p class="weather">阴</p>
+                        <img class="icon" src="02.png">
+                    </div>
+                    <div class="night">
+                        <img class="icon" src="01-1.png">
+                        <p class="weather">晴</p>
+                        <p class="txt-time" style="margin-top: 15px;margin-bottom: 5px;">西北风</p>
+                        <p class="txt-time">4级</p>
+                    </div>
+                </il>
+                <il class="item" style="width: 62.5px;">
+                    <p class="txt-time">周五</p>
+                    <p class="txt-time" style="margin-top: 5px;margin-bottom: 15px;">05/23</p>
+                    <div class="daytime" style="width: 62.5px;height: 74px;">
+                        <p class="weather">阴</p>
+                        <img class="icon" src="02.png">
+                    </div>
+                    <div class="night">
+                        <img class="icon" src="01-1.png">
+                        <p class="weather">晴</p>
+                        <p class="txt-time" style="margin-top: 15px;margin-bottom: 5px;">西北风</p>
+                        <p class="txt-time">4级</p>
+                    </div>
+                </il>
+                <il class="item" style="width: 62.5px;">
+                    <p class="txt-time">周六</p>
+                    <p class="txt-time" style="margin-top: 5px;margin-bottom: 15px;">05/23</p>
+                    <div class="daytime" style="width: 62.5px;height: 74px;">
+                        <p class="weather">阴</p>
+                        <img class="icon" src="02.png">
+                    </div>
+                    <div class="night">
+                        <img class="icon" src="01-1.png">
+                        <p class="weather">晴</p>
+                        <p class="txt-time" style="margin-top: 15px;margin-bottom: 5px;">西北风</p>
+                        <p class="txt-time">4级</p>
+                    </div>
+                </il>
+            
+            </ol>
+
+        
+        </div>
+
+    </section>
+
+    <script type="text/javascript" src="get.js"></script>
+
+</body>
+</html>
